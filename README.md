@@ -25,37 +25,37 @@ Reguły akcji zdefiniowane są w klasie `AllowedActionsRule`, a dane testowe sym
 
 ## Struktura rozwiązania
 MilleniumRecruitmentTask.sln
-├── Api
-│   ├── Program.cs
-│   ├── Controllers
-│   │   └── CardsController.cs
-│   └── Middlewares
-│       ├── ApiKeyMiddleware.cs
-│       └── ExceptionHandlingMiddleware.cs
-│
-├── Model
-│   ├── Enums
-│   │   ├── CardType.cs
-│   │   └── CardStatus.cs
-│   ├── Model
-│   │   └── CardDetails.cs
-│   ├── Exceptions
-│   │   └── CardNotFoundException.cs
-│   └── Rules
-│       ├── ActionRule.cs
-│       └── AllowedActionsRule.cs
-│
-├── Services
-│   ├── Abstract
-│   │   └── ICardService.cs
-│   └── Concrete
-│       └── CardService.cs
-│
-└── Tests
-    ├── Services
-    │   └── CardServiceTests.cs
-    └── Rules
-        └── AllowedActionsRuleTests.cs
+Api:
+    Program.cs
+    Controllers
+        CardsController.cs
+    Middlewares
+        ApiKeyMiddleware.cs
+        ExceptionHandlingMiddleware.cs
+
+Model
+    Enums
+        CardType.cs
+        CardStatus.cs
+    Model
+        CardDetails.cs
+        ActionRule.cs
+    Exceptions
+        CardNotFoundException.cs
+    Rules
+        AllowedActionsRule.cs
+
+Services
+Abstract
+    ICardService.cs
+Concrete
+    CardService.cs
+Tests
+    Services
+        CardServiceTests.cs
+    Rules
+        AllowedActionsRuleTests.cs
+
 ## Wymagania
 .NET 8 SDK
 Visual Studio 2022
@@ -66,11 +66,13 @@ Narzędzia: dotnet cli, Swagger UI
 2. Uruchom w środowiku Visual Studio i (lub) zbuduj poprzez komendę dotnet build
 3. Uruchom projekt MilleniumRecruitmentTask.Api w profilu https
 4. Sprawdź działanie pod adresem https://localhost:7067/swagger/index.html
+
 ## Testy
 Repo zawiera testy:
 
 Services/CardServiceTests – weryfikacja scenariuszy GetCardDetailsAsync oraz GetAllowedActions.
 Testy można uruchomić poprzez komendę dotnet test lub poprzez IDE Visual Studio: Test-> Uruchom wszystkie testy
+
 ## Rozszerzalność
 Reguły można przenieść do pliku JSON lub bazy danych z np. wykorzystaniem ORM Entity Framework– wystarczy zamienić implementację AllowedActionsRule na odczyt z zewnętrznego źródła.
 
