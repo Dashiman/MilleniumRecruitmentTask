@@ -24,37 +24,37 @@ Reguły akcji zdefiniowane są w klasie `AllowedActionsRule`, a dane testowe sym
 ---
 
 ## Struktura rozwiązania
+```text
 MilleniumRecruitmentTask.sln
-Api:
-    Program.cs
-    Controllers
-        CardsController.cs
-    Middlewares
-        ApiKeyMiddleware.cs
-        ExceptionHandlingMiddleware.cs
-
-Model
-    Enums
-        CardType.cs
-        CardStatus.cs
-    Model
-        CardDetails.cs
-        ActionRule.cs
-    Exceptions
-        CardNotFoundException.cs
-    Rules
-        AllowedActionsRule.cs
-
-Services
-Abstract
-    ICardService.cs
-Concrete
-    CardService.cs
-Tests
-    Services
-        CardServiceTests.cs
-    Rules
-        AllowedActionsRuleTests.cs
+├── Api
+│   ├── Program.cs
+│   ├── Controllers
+│   │   └── CardsController.cs
+│   └── Middlewares
+│       ├── ApiKeyMiddleware.cs
+│       └── ExceptionHandlingMiddleware.cs
+├── Model
+│   ├── Enums
+│   │   ├── CardType.cs
+│   │   └── CardStatus.cs
+│   ├── Model
+│   │   ├── CardDetails.cs
+│   │   └── ActionRule.cs
+│   ├── Exceptions
+│   │   └── CardNotFoundException.cs
+│   └── Rules
+│       └── AllowedActionsRule.cs
+├── Services
+│   ├── Abstract
+│   │   └── ICardService.cs
+│   └── Concrete
+│       └── CardService.cs
+└── Tests
+    ├── Services
+    │   └── CardServiceTests.cs
+    └── Rules
+        └── AllowedActionsRuleTests.cs
+```
 
 ## Wymagania
 .NET 8 SDK
