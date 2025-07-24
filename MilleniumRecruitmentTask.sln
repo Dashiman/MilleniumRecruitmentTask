@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilleniumRecruitmentTask.Api", "MilleniumRecruitmentTask\MilleniumRecruitmentTask.Api.csproj", "{3455A562-B7BE-4893-940F-935CD2704FD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilleniumRecruitmentTask.Services", "MilleniumRecruitmentTask.Services\MilleniumRecruitmentTask.Services.csproj", "{24ACEFD2-DD0E-4C79-85A0-C73E53338241}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilleniumRecruitmentTask.Model", "MilleniumRecruitmentTask.Model\MilleniumRecruitmentTask.Model.csproj", "{C5277E3A-88A6-4AE9-8E8C-164AB02FD404}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementy rozwiązania", "Elementy rozwiązania", "{3632D873-52C7-4391-B817-A1E86FBC91D8}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilleniumRecruitmentTask.Tests", "MilleniumRecruitmentTask.Tests\MilleniumRecruitmentTask.Tests.csproj", "{85EB5160-820F-41A7-BCD9-BA0274D68CB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3455A562-B7BE-4893-940F-935CD2704FD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3455A562-B7BE-4893-940F-935CD2704FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3455A562-B7BE-4893-940F-935CD2704FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3455A562-B7BE-4893-940F-935CD2704FD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24ACEFD2-DD0E-4C79-85A0-C73E53338241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24ACEFD2-DD0E-4C79-85A0-C73E53338241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24ACEFD2-DD0E-4C79-85A0-C73E53338241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24ACEFD2-DD0E-4C79-85A0-C73E53338241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5277E3A-88A6-4AE9-8E8C-164AB02FD404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5277E3A-88A6-4AE9-8E8C-164AB02FD404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5277E3A-88A6-4AE9-8E8C-164AB02FD404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5277E3A-88A6-4AE9-8E8C-164AB02FD404}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85EB5160-820F-41A7-BCD9-BA0274D68CB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85EB5160-820F-41A7-BCD9-BA0274D68CB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85EB5160-820F-41A7-BCD9-BA0274D68CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85EB5160-820F-41A7-BCD9-BA0274D68CB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B80FE941-ED5B-4A4E-909B-E3FC119040E6}
+	EndGlobalSection
+EndGlobal
